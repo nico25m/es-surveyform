@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form method="post" id="survey-form">
+      <h1 id="title">Surver Form</h1>
+      <p id="description">Compile the form</p>
+        <label id="name-label"><strong>Name:</strong> <br><input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label"><strong>Email:</strong> <br><input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label"><strong>Age:</strong> <br><input id="number" type="number" min="0" max="120" placeholder="Enter your age"></label>
+        <hr>
+        <h3>Which option best describes your current role?</h3>
+        <div>
+          <select id="dropdown" required>
+              <option disabled selected>Select current role</option>
+              <option>Student</option>
+              <option>Full time job</option>
+              <option>Full time learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+          </select>
+        </div>
+        
+        <div>
+          <h3>Do you like my form?</h3>
+          <fieldset>       
+        <label><input id="like" type="radio" value="yes" name="like" checked>yes</label>
+        <label><input id="like" type="radio" value="more less" name="like">more or less</label>
+        <label><input id="like" type="radio" value="no" name="like">no</label>       
+        <label><input id="like" type="radio" value="anything" name="like">anything</label>
+        </div>
+        </fieldset>
+        <div>
+        <h3>Add a comment if you want!</h3>
+        <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+        <input id="tp" type="checkbox" value="terms-and-contitions" name="terms-and-contitions" required>I accept <a        href="terms-and-conditions">terms and conditions</a>
+        <input id="tp" type="checkbox" value="privacy-policy" name="privacy-policy" required>I accept <a href="privacy-policy">privacy policy</a>
+       </div>
+      
+        
+        <input id="submit" type="submit" name="submit" value="SUBMIT">
+    </form>
+  </body>
+</html>
