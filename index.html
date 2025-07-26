@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Survey Form</title>
-  </head>
-  <body>
-    <div>
-     <form class="survey" method="post" action="">
-       <input id="campo" type="username" placeholder="Username" required>
-       <input id="campo" type="name" placeholder="Name" required>
-       <input id="campo" type="surname" placeholder="Surname" required>
-       <input id="campo" type="email" placeholder="Email" required>
-       <input id="campo" type="password" placeholder="Password" required>
-       <input id="button" type="submit" value="Submit">
-     </form>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <form class="survey" method="post" action="">
+      <h2>Survey Form</h2>
+
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" placeholder="Username" required>
+
+      <label for="name">Nome</label>
+      <input id="name" type="text" name="name" placeholder="Nome" required>
+
+      <label for="surname">Cognome</label>
+      <input id="surname" type="text" name="surname" placeholder="Cognome" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Email" required>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" placeholder="Password" required>
+
+      <input id="submit" type="submit" value="Invia">
+    </form>
+  </div>
+</body>
 </html>
