@@ -63,7 +63,7 @@ input::placeholder {
   background-color: #ff4c4c;
 }
 
-.back{
+.back {
   position: absolute;
   left: 0.6%;
   top: 0.8%;
@@ -74,12 +74,16 @@ input::placeholder {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  font-weight:500;
+  font-weight: 500;
   font-size: 0.9em;
   transition: 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.back:hover{
+.back:hover {
   box-shadow: 0.5px 0.5px 5px #ff4c4c;
   transition: 0.2s;
 }
